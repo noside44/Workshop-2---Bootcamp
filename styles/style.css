@@ -1,0 +1,107 @@
+:root{
+    --very-ligth-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital--green: #ACD9B2;
+    --White: #FFFFFF;
+    --black: #000;
+    --sm:14px;
+    --md:16px;
+    --lg:18px
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.inactive{
+    display: none;
+}
+.navbar{
+    margin: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--very-ligth-pink);
+}
+.navbar .nav{
+    max-width: 140px;
+    background-color: white;
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    border: 1px solid var(--very-ligth-pink);
+}
+.navbar .menu-logo{
+    width: 52px;
+    margin-left: 24px;
+}
+.navbar .nav-link{
+    font-family: poppins;
+    font-size: 20px;
+}
+.navbar .app-logo{
+    width: 64px;
+    margin-right: 24px;
+}
+.navbar .app-name{
+    width: 180px;
+    /* margin-left: calc(50% - 170px); */
+}
+.id-form .send-info-button{
+    color: var(--hospital--green);
+    border: 2px solid var(--hospital--green);
+    background-color: white;
+    font-weight: 700;
+}
+.id-form .send-info-button:hover{
+    background-color: var(--hospital--green);
+    color: white;
+}
+.id-form .send-info-button:active{
+    background-color: black;
+    border: 2px solid black;
+}
+input, select{
+    outline-color: var(--hospital--green);
+}
+.calories-calc .form-check{
+    
+}
+.calories-calc .form-check-input{
+    padding-left: 0;
+    background-color: var(--hospital--green);
+}
+.calories-calc .form-check-input:checked{
+    border: 1px solid black;
+}
+.calories-calc .calculate-button{
+    background-color: var(--hospital--green);
+    color: #000;
+    border: 2px solid black;
+    font-weight: 700;
+}
+.calories-calc .calculate-button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-weight: 700;
+}
+.calories-calc .calculate-button:active{
+    background-color: var(--hospital--green);
+    color: #000;
+    border: 2px solid black;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .navbar .nav{
+        display: flex;
+        /* flex-direction: row; */
+        position: static;
+        background-color: none;
+        border: none;
+        min-width: 500px;
+    }
+    .navbar .menu-logo{
+        display: none;
+    }
+}
