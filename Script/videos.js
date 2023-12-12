@@ -30,7 +30,7 @@ async function fetchData(urlApi){
               <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" class="img-fluid" />
             </div>
             <div class="video-youtube" style="font-size:12px">
-                <a href="https://www.youtube.com/watch?v=${video.id.videoId}">Ir a Video</a>
+                <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank">Ir a Video</a>
             </div>
             <div class="" style="font-size:12px">
                 ${video.snippet.description}
