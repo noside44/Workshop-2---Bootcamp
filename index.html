@@ -35,11 +35,11 @@
     </nav>
 
     <!-- Formulario de identificación -->
-    <section class="id-container my-4">
+    <section class="id-container mt-4 mb-5">
         <h4 class="text-center mx-5 mb-4">Bienvenido a nuestro portal. Primero permítenos saber quién eres</h4>
         <form id="identification-form" class="id-form d-flex flex-column col-6 mx-auto">
             <label for="select-document">Tipo de documento:</label>
-            <select id="select-document" class="form-select-sm select-document" aria-label="Default select example ">
+            <select id="select-document" class="form-select-sm select-document mb-2" aria-label="Default select example ">
                 <option class="select-id" selected>Selecciona el tipo de documento</option>
                 <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
                 <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
@@ -47,34 +47,34 @@
             </select>
             <div class="id-form__personal-data d-flex flex-column">
                 <label for="document">Número de documento:</label>
-                <input required id="document" class="border border-secondary-subtle rounded" type="number">
+                <input required id="document" class="border border-secondary-subtle rounded mb-2" type="number">
                 <label for="name">Nombres:</label>
-                <input required id="name" class="border border-secondary-subtle rounded" type="text">
+                <input required id="name" class="border border-secondary-subtle rounded mb-2" type="text">
                 <label for="surname">Apellidos:</label>
-                <input required id="surname" class="border border-secondary-subtle rounded" type="text">
+                <input required id="surname" class="border border-secondary-subtle rounded mb-2" type="text">
             </div>
             <button type="submit" class="btn btn-primary send-info-button mt-4">Enviar</button>
         </form>
     </section>
-    <section class="welcome-container col-6 mx-auto mt-5">
-        <div class="inactive welcome-msg text-center">
-            <h4>Acá va el mensaje de bienvenida con nombre y cédula</h4>
+    <section class="welcome-container col-6 mx-auto">
+        <div class="inactive welcome-msg text-center pb-4">
+            <h4 class="pb-4">Acá va el mensaje de bienvenida con nombre y cédula</h4>
         </div>
     </section>
 
     <!-- Formulario de calculadora de calorías -->
-    <form id="calories-calc" class="calories-calc d-flex flex-column col-6 mx-auto py-4 border-top border-1 border-secondary-subtle">
+    <form id="calories-calc" class="calories-calc d-flex flex-column col-6 mx-auto py-5 border-top border-1 border-secondary-subtle">
         <h5 class="fw-bold"> Calculadora de Calorías</h5>
         <div class="user-data d-flex flex-column">
             <label for="age">Edad:</label>
-            <input id="age" class="border border-secondary-subtle rounded" type="number" required>
+            <input id="age" class="border border-secondary-subtle rounded mb-2" type="number" required>
             <label for="weight">Peso:</label>
-            <input id="weight" class="border border-secondary-subtle rounded" type="number" required>
+            <input id="weight" class="border border-secondary-subtle rounded mb-2" type="number" required>
             <label for="heght">Altura:</label>
-            <input id="height" class="border border-secondary-subtle rounded" type="number" required>
+            <input id="height" class="border border-secondary-subtle rounded mb-2" type="number" required>
         </div>
         <label for="physical-activity">Actividad Física:</label>
-        <select class="form-select-sm physical-activity-select" aria-label="Default select example">
+        <select class="form-select-sm physical-activity-select mb-3" aria-label="Default select example">
             <option class="physical-activity" selected>Seleccione su actividad física</option>
             <option value="1.2">Poco o ningún ejercicio</option>
             <option value="1.375">Ejercicio ligero (1-3 días a la semana)</option>
@@ -95,10 +95,11 @@
               Masculino
             </label>
         </div>
-        <button type="submit" class="btn btn-primary calculate-button mt-4">Calcular</button>
-        <p class="total-calories text-center mt-5">
+        <button type="submit" class="btn btn-primary calculate-button mt-5">Calcular</button>
+        <img src="" alt=""> <!-- Espacio para agregar la imagen en pantalla grande -->
+        <h5 class="total-calories text-center mt-5">
             Acá va el resultado
-        </p>
+        </h5>
     </form>
 
     <!-- Sección de videos -->

@@ -32,7 +32,7 @@
 }
 .navbar .menu-logo{
     width: 52px;
-    margin-left: 24px;
+    /* margin-left: 24px; */
 }
 .navbar .nav-link{
     font-family: poppins;
@@ -40,7 +40,7 @@
 }
 .navbar .app-logo{
     width: 64px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
 }
 .navbar .app-name{
     width: 180px;
