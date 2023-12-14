@@ -14,6 +14,9 @@
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
+input{
+    padding: 0.2rem 0.8rem;
+}
 .inactive{
     display: none;
 }
@@ -91,7 +94,6 @@ input, select{
     border: 2px solid black;
     font-weight: 700;
 }
-
 @media (min-width: 768px) {
     .navbar .nav{
         display: flex;
@@ -103,5 +105,31 @@ input, select{
     }
     .navbar .menu-logo{
         display: none;
+    }
+}
+footer{
+    margin: 1.8rem 0 1.2rem 0;
+}
+footer .footer-div{
+    padding-left: 1.2rem;
+}
+footer .footer-div a{
+    width: 4rem;
+    text-decoration: none;
+    color: var(--black);
+}
+footer .footer-div .social{
+    display: flex;
+    justify-content: space-between;
+}
+footer .logo{
+    width: 3rem;
+}
+footer .page-end{
+    margin: 2.2rem 0 5rem 0;
+}
+@media (max-width: 768px){
+    footer .footer-div{
+        text-align: center;
     }
 }

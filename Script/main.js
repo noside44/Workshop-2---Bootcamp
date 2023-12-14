@@ -10,6 +10,7 @@ logoMenu.addEventListener("click", function showMenu(){
 //Formulario de identificación y validación de datos
 const sendFormId = document.querySelector(".id-form")
 const documentType = document.querySelector(".select-document")
+const userAge = document.querySelector(".select-age")
 const idData = document.querySelector(".id-container")
 const idMessage = document.querySelector(".welcome-msg")
 
@@ -23,7 +24,7 @@ sendFormId.addEventListener("submit", function sendInfo(){
         alert("Seleccione un tipo de documento")
     }
     else{
-        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> identificado con ${documentType.value} número <b>${idNumber.value}</b>`
+        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> del grupo de los <b>${userAge.value}</b>, identificado con ${documentType.value} número <b>${idNumber.value}</b>`
 
         idMessage.classList.remove("inactive")
         idData.classList.add("inactive")
