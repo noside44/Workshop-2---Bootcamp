@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./Assets/logos/Logo-tr.png">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body> 
     <nav class="navbar pt-1 pb-3">
         <img class="menu-logo" src="./Assets/logos/menu.png" alt="Mobile Menu">
         <div>
@@ -47,24 +47,24 @@
             </select>
             <div class="id-form__personal-data d-flex flex-column">
                 <label for="document">Número de documento:</label>
-                <input required id="document" class="border border-secondary-subtle rounded mb-2" type="number">
+                <input required id="document" class="border border-secondary-subtle rounded mb-2" type="number" placeholder="Escriba su número de documento">
                 <label for="name">Nombres:</label>
-                <input required id="name" class="border border-secondary-subtle rounded mb-2" type="text">
+                <input required id="name" class="border border-secondary-subtle rounded mb-2" type="text" placeholder="Escriba sus nombres completos">
                 <label for="surname">Apellidos:</label>
-                <input required id="surname" class="border border-secondary-subtle rounded mb-2" type="text">
+                <input required id="surname" class="border border-secondary-subtle rounded mb-2" type="text" placeholder="Escriba sus apellidos">
             </div>
-            <label for="select-age">Edad:</label>
+            <label for="select-age">Rango de Edad:</label>
             <select id="select-age" class="form-select-sm select-age mb-2" aria-label="Default select example">
-                <option class="select-id" selected>Seleccione el grupo de edad al que pertenece</option>
-                <option value="jovenes">Entre 15 y 29 años</option>
-                <option value="adultos">Entre 30 y 59 años</option>
-                <option value="adultos mayores">Mayor de 60 años</option>
+                <option class="select-id" selected>Seleccione el rango de edad en el que se encuentre</option>
+                <option value="Jóvenes">Entre 15 y 18 años</option>
+                <option value="Adultos">Entre 18 y 59 años</option>
+                <option value="Adultos Mayores">Mayor de 60 años</option>
             </select>
             <button type="submit" class="btn btn-primary send-info-button mt-4">Enviar</button>
         </form>
     </section>
     <section class="welcome-container col-8 col-lg-6 mx-auto">
-        <div class="inactive welcome-msg text-center pb-4">
+        <div class="inactive welcome-msg text-start pb-4">
             <h4 class="pb-4">Acá va el mensaje de bienvenida con nombre y cédula</h4>
         </div>
     </section>
@@ -74,11 +74,11 @@
         <h5 class="fw-bold"> Calculadora de Calorías</h5>
         <div class="user-data d-flex flex-column">
             <label for="age">Edad:</label>
-            <input id="age" class="border border-secondary-subtle rounded mb-2" type="number" required>
+            <input id="age" class="border border-secondary-subtle rounded mb-2" type="number" required min="15" placeholder="Escriba su edad">
             <label for="weight">Peso:</label>
-            <input id="weight" class="border border-secondary-subtle rounded mb-2" type="number" required>
+            <input id="weight" class="border border-secondary-subtle rounded mb-2" type="number" required placeholder="Escriba su peso en kg">
             <label for="heght">Altura:</label>
-            <input id="height" class="border border-secondary-subtle rounded mb-2" type="number" required>
+            <input id="height" class="border border-secondary-subtle rounded mb-2" type="number" required placeholder="Escriba su altura en cm">
         </div>
         <label for="physical-activity">Actividad Física:</label>
         <select class="form-select-sm physical-activity-select mb-3" aria-label="Default select example">
@@ -103,7 +103,6 @@
             </label>
         </div>
         <button type="submit" class="btn btn-primary calculate-button mt-5">Calcular</button>
-        <img src="" alt=""> <!-- Espacio para agregar la imagen en pantalla grande -->
         <h5 class="total-calories text-center mt-5">
         </h5>
     </form>
@@ -116,7 +115,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid">
+    <footer class="container-fluid pt-5 pb-1 mb-0">
         <section class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-4">
@@ -132,7 +131,7 @@
                                 <img src="./Assets/svg/facebook-logo.svg" class="img-fluid me-5" alt="Facebook">
                             </a>
                             <a href="#!">
-                                <img src="./Assets/svg/ig-logo.svg" class="img-fluid me-5" alt="Instagram">
+                                <img src="./Assets/svg/ig-logo.svg" class="img-fluid me-5 ig-logo" alt="Instagram">
                             </a>
                             <a href="#!">
                                 <img src="./Assets/svg/x-logo.svg" class="img-fluid me-5" alt="X">

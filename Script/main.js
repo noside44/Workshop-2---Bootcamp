@@ -24,7 +24,9 @@ sendFormId.addEventListener("submit", function sendInfo(){
         alert("Seleccione un tipo de documento")
     }
     else{
-        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> del grupo de los <b>${userAge.value}</b>, identificado con <b>${documentType.value}</b> número <b>${idNumber.value}</b>`
+        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b>, identificado con <b>${documentType.value}</b> número <b>${idNumber.value}</b> <br><br>
+        Usted se encuentra en el grupo poblacional correspondiente a <b>${userAge.value}</b>, Por favor visite nuestra sección salud para conocer el plan de ejercicio de acuerdo a su grupo poblacional. <br><br>
+        Para conocer el número de calorías diarias necesarias use la calculadora de calororías`
 
         idMessage.classList.remove("inactive")
         idData.classList.add("inactive")
@@ -61,7 +63,8 @@ sendCalculateForm.addEventListener("submit", function result(){
         }
         console.log(calories)
         function render(){
-        totalCalories.innerHTML = `Calorías diarias recomendadas ${calories}`
+        totalCalories.innerHTML = `<span class="calc-logo"></span> <br>
+        Calorías diarias recomendadas <b>${calories}</b>` 
         }
     }
 })

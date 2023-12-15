@@ -14,8 +14,17 @@
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
+html, body{
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 input{
     padding: 0.2rem 0.8rem;
+}
+input, select{
+    outline-color: var(--hospital--green);
 }
 .inactive{
     display: none;
@@ -46,7 +55,7 @@ input{
     /* margin-right: 24px; */
 }
 .navbar .app-name{
-    width: 180px;
+    width: 140px;
     /* margin-left: calc(50% - 170px); */
 }
 .id-form .send-info-button{
@@ -62,12 +71,6 @@ input{
 .id-form .send-info-button:active{
     background-color: black;
     border: 2px solid black;
-}
-input, select{
-    outline-color: var(--hospital--green);
-}
-.calories-calc .form-check{
-    
 }
 .calories-calc .form-check-input{
     padding-left: 0;
@@ -94,24 +97,19 @@ input, select{
     border: 2px solid black;
     font-weight: 700;
 }
-@media (min-width: 768px) {
-    .navbar .nav{
-        display: flex;
-        /* flex-direction: row; */
-        position: static;
-        background-color: none;
-        border: none;
-        min-width: 500px;
-    }
-    .navbar .menu-logo{
-        display: none;
-    }
-}
+
 footer{
-    margin: 1.8rem 0 1.2rem 0;
+    width: 100vw;
+    padding: 0;
+    background-color: var(--hospital--green);
+}
+footer h4{
+    font-size: 16px;
+    font-weight: bold;
 }
 footer .footer-div{
     padding-left: 1.2rem;
+    font-size: 12px;
 }
 footer .footer-div a{
     width: 4rem;
@@ -127,9 +125,26 @@ footer .logo{
 }
 footer .page-end{
     margin: 2.2rem 0 5rem 0;
+    font-size: 14px;
 }
-@media (max-width: 768px){
-    footer .footer-div{
-        text-align: center;
+
+@media (min-width: 768px) {
+    .navbar .nav{
+        display: flex;
+        /* flex-direction: row; */
+        position: static;
+        background-color: none;
+        border: none;
+        min-width: 500px;
+    }
+    .navbar .menu-logo{
+        display: none;
+    }
+    .calc-logo{
+        background-image: url(../Assets/img/Running.png);
+        background-size: contain;
+        display: inline-block;
+        width: 150px;
+        height: 165px;
     }
 }
