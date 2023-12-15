@@ -23,7 +23,7 @@ sendFormId.addEventListener("submit", function sendInfo(){
         alert("Seleccione un tipo de documento")
     }
     else{
-        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> identificado con ${documentType.value} número <b>${idNumber.value}</b>`
+        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> Identificado con ${documentType.value} Número <b>${idNumber.value}</b>`
 
         idMessage.classList.remove("inactive")
         idData.classList.add("inactive")
@@ -46,16 +46,19 @@ sendCalculateForm.addEventListener("submit", function result(){
     event.preventDefault()
     
     let calories
+    function calorie(num){
+        return activitySelect.value * (10 * weight.value) + (6.25 * height.value) - (5 * age.value) + num
+    }
     if(activitySelect.selectedIndex === 0){
         alert("Seleccione el tipo de actividad física")
     }
     else{
         if(womanCheckBox){
-            calories = activitySelect.value * (10 * weight.value) + (6.25 * height.value) - (5 * age.value) - 161             
+            calories = calorie(-161)            
             render()
         }
         if(manCheckBox){
-            calories = activitySelect.value * (10 * weight.value) + (6.25 * height.value) - (5 * age.value) + 5               
+            calories = calorie(5)             
             render()
         }
         console.log(calories)
