@@ -10,6 +10,7 @@ logoMenu.addEventListener("click", function showMenu(){
 //Formulario de identificación y validación de datos
 const sendFormId = document.querySelector(".id-form")
 const documentType = document.querySelector(".select-document")
+const userAge = document.querySelector(".select-age")
 const idData = document.querySelector(".id-container")
 const idMessage = document.querySelector(".welcome-msg")
 
@@ -19,11 +20,13 @@ sendFormId.addEventListener("submit", function sendInfo(){
     const surname = document.getElementById("surname")
     event.preventDefault()
 
-    if(documentType.selectedIndex === 0){
+    if(!(userAge.selectedIndex && documentType.selectedIndex)){
         alert("Seleccione un tipo de documento")
     }
     else{
-        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> Identificado con ${documentType.value} Número <b>${idNumber.value}</b>`
+        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b>, identificado con <b>${documentType.value}</b> número <b>${idNumber.value}</b> <br><br>
+        Usted se encuentra en el grupo poblacional correspondiente a <b>${userAge.value}</b>, Por favor visite nuestra sección salud para conocer el plan de ejercicio de acuerdo a su grupo poblacional. <br><br>
+        Para conocer el número de calorías diarias necesarias use la calculadora de calororías`
 
         idMessage.classList.remove("inactive")
         idData.classList.add("inactive")
@@ -63,7 +66,8 @@ sendCalculateForm.addEventListener("submit", function result(){
         }
         console.log(calories)
         function render(){
-        totalCalories.innerHTML = `Calorías diarias recomendadas ${calories}`
+        totalCalories.innerHTML = `<span class="calc-logo"></span> <br>
+        Calorías diarias recomendadas <b>${calories}</b>` 
         }
     }
 })
