@@ -19,19 +19,22 @@
         </div>
         <ul class="nav fw-bold inactive">
             <li class="nav-item">
-              <a class="nav-link text-dark" aria-current="page" href="https://www.google.com/?hl=es">Nosotros</a>
+              <a class="nav-link text-dark" aria-current="page" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Planes</a>
+              <a class="nav-link text-dark" href="#calories-calc">Calculadora</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Convenios</a>
+              <a class="nav-link text-dark" href="#videos">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#contacto">Contacto</a>
             </li>
           </ul>
           <img class="app-logo" src="./Assets/logos/Logo-solo.png" alt="">
     </nav>
     <!-- Formulario de identificación -->
-    <section class="id-container mt-4 mb-5">
+    <section class="id-container mt-4 mb-5" id="inicio">
         <h4 class="text-center mx-5 mb-4">Bienvenido a nuestro portal. Primero permítenos saber quién eres</h4>
         <form id="identification-form" class="id-form d-flex flex-column col-8 col-lg-6 mx-auto">
             <label for="select-document">Tipo de documento:</label>
@@ -59,7 +62,7 @@
             <button type="submit" class="btn btn-primary send-info-button mt-4">Enviar</button>
         </form>
     </section>
-    <section class="welcome-container col-8 col-lg-6 mx-auto">
+    <section id="inicio" class="welcome-container col-8 col-lg-6 mx-auto">
         <div class="inactive welcome-msg text-start pb-4">
             <h4 class="pb-4">Acá va el mensaje de bienvenida con nombre y cédula</h4>
         </div>
@@ -104,17 +107,17 @@
     </form>
 
     <!-- Sección de videos -->
-    <section class="videos-container container col-10 border-top border-1 border-secondary-subtle">
+    <section id="videos" class="videos-container container col-10 border-top border-1 border-secondary-subtle">
         <h4 class="fw-bold mt-5">Videos de interes</h4>
         <div id="content" class="row d-flex justify-content-between justify-content-center" >
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid pt-5 pb-1 mb-0">
+    <footer id="contacto" class="container-fluid pt-5 pb-1 mb-0">
         <section class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
+            <div class="row ">
+                <div class="col-xs-12 col-md-4 ">
                     <div class="footer-div">
                         <h4>
                             Los'em
@@ -136,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="footer-div">
+                    <div class="footer-div ms-3">
                         <h4>
                             Servicio
                         </h4>
@@ -157,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="footer-div">
+                    <div class="footer-div ps-0">
                         <h4>
                             Preguntas frecuentes
                         </h4>

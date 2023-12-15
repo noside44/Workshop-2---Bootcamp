@@ -49,7 +49,7 @@ sendCalculateForm.addEventListener("submit", function result(){
     event.preventDefault()
     
     let calories
-    function calorie(num){
+    function caloriesFormule(num){
         return activitySelect.value * (10 * weight.value) + (6.25 * height.value) - (5 * age.value) + num
     }
     if(activitySelect.selectedIndex === 0){
@@ -57,11 +57,11 @@ sendCalculateForm.addEventListener("submit", function result(){
     }
     else{
         if(womanCheckBox){
-            calories = calorie(-161)            
+            calories = caloriesFormule(-161)            
             render()
         }
         if(manCheckBox){
-            calories = calorie(5)             
+            calories = caloriesFormule(5)             
             render()
         }
         console.log(calories)
