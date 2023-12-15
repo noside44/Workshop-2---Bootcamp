@@ -20,11 +20,11 @@ sendFormId.addEventListener("submit", function sendInfo(){
     const surname = document.getElementById("surname")
     event.preventDefault()
 
-    if(documentType.selectedIndex === 0){
+    if(!(userAge.selectedIndex && documentType.selectedIndex)){
         alert("Seleccione un tipo de documento")
     }
     else{
-        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> del grupo de los <b>${userAge.value}</b>, identificado con ${documentType.value} número <b>${idNumber.value}</b>`
+        idMessage.innerHTML = `Bienvenido <b>${name.value}</b> <b>${surname.value}</b> del grupo de los <b>${userAge.value}</b>, identificado con <b>${documentType.value}</b> número <b>${idNumber.value}</b>`
 
         idMessage.classList.remove("inactive")
         idData.classList.add("inactive")
